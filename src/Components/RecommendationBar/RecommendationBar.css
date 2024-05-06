@@ -1,0 +1,53 @@
+.recommended-container{
+
+}
+.space{
+    display:flex;
+    justify-content: space-between;
+}
+.suggest-div{
+font-size:0.8rem;
+}
+.suggest-seeAll{
+    color:white;
+    font-size: 0.7rem;
+    padding-right:1.676rem;
+}
+.recomended--user{
+    display:flex;
+    flex-direction:row;
+    width:100%;
+    height:3rem;
+    margin: 0.8rem 0 1.6rem 0;
+}
+.recomended--user img{
+    object-fit:contain;
+    max-width:28%;
+    height:100%;
+    border-radius: 50%;
+    cursor:pointer;
+}
+.recommended--username{
+    display: flex;
+    flex-direction:column;  
+    
+    color:white;
+     font-size:0.8rem;
+     padding-top:0.458rem;
+     padding-left:0.4rem;
+     cursor:pointer;
+}
+.behind-info{
+    color: rgba(255,255,255, 0.9);
+    font-size:0.7rem;
+}
+.btn-follow{
+    display:flex;
+    color:blue;
+    font-size:0.8rem;
+    padding-top:0.6rem;
+    align-items:center;
+    margin-left:auto;
+    cursor:pointer;
+    padding-right:2rem;
+}

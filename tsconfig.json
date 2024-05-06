@@ -20,6 +20,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src"],
+  "include": ["src", "Array_recm.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

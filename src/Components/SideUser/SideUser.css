@@ -1,0 +1,45 @@
+.side--user{
+display:flex;
+flex-direction:row;
+    width:100%;
+height:3rem;
+
+}
+.img--div{
+    
+}
+.side--user img{
+    object-fit:cover;
+    max-width:28%;
+    min-height:100%;
+    border-radius: 50%;
+    cursor:pointer;
+
+}
+.side--username{
+    display: flex;
+    flex-direction:column;  
+    color:white;
+     font-size:0.8rem;
+     padding-top:0.458rem;
+     padding-left:0.4rem;
+     cursor:pointer;
+
+}
+.side--behindName{
+    display:flex;
+    cursor:pointer;
+
+color: var(--opaque_white);
+font-size:0.8rem;
+}
+
+.btn-cambiar{
+display:flex;
+    color:blue;
+    font-size:0.8rem;
+    align-items:center;
+    margin-left:auto;
+    cursor:pointer;
+    padding-right:2rem;
+}
