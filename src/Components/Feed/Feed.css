@@ -1,0 +1,17 @@
+.feed--board{
+    margin-top:1.5rem;
+    margin-bottom:1.5rem;
+    display:flex;
+    width:47rem;
+    height:auto;
+    flex-grow:1;
+    justify-content: center;
+    background-color:black;
+
+height:90vh;
+}
+.post--board{
+width:27rem;
+background-color:black;
+color:white;
+}

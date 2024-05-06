@@ -1,0 +1,23 @@
+.story--orbs{
+    display:flex;
+    flex-direction:row;
+    height:5rem;
+    background-color:black;
+    padding-left:2rem;
+}
+.story--user{
+    font-size:0.7rem;
+}
+.story--orbs img{
+width:4rem;
+object-fit:contain;
+border: solid black;
+border-radius: 5rem;
+
+height:inherit;
+margin:auto;
+display:block;
+}
+.story--img{
+padding:1rem;
+}

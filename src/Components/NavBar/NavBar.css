@@ -1,0 +1,32 @@
+.navbar--dash{
+    display:flex;
+    flex-direction:column;
+    width:16rem;
+    height:100vh;
+    background-color:black;
+    border-right: solid var(--opaque_white) 0.3px;
+    position:sticky;
+    top:0;
+}
+.navbar--dash div{
+    margin-left:0.8rem;
+
+}
+.navbar--elements{
+    display:flex;
+    flex-direction:column;
+
+    font-size:1.1rem;
+    gap:1.5rem;
+
+}
+.navbar--elements svg {
+    margin-right:5px;
+}
+.main-svg{
+    margin:2rem;
+    font-size:1.3rem;
+}
+.btm--div{
+    margin-top:3rem;
+}

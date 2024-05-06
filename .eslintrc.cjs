@@ -12,15 +12,16 @@ module.exports = {
   plugins: ['react-refresh'],
 
   parserOptions:[
-ecmaVersion: 'latest',
+ecmaVersion:'Latest',
 sourceType: 'module',
-project:  './tsconfig.json'
+project:'./tsconfig.json'
   ],
   rules: {
+    'react/react-in-jsx-scope': 'off',
+
     'react-refresh/only-export-components': [
       'warn',
-      { allowConstantExport: true },
+      { allowConstantExport: true }
     ],
-    'react/react-in-jsx-scope': 'off'
   },
 }
