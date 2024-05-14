@@ -3,12 +3,12 @@ import { recommendedUser } from '../../../Array_recm'
 import SideUser from '../SideUser/SideUser'
 import './SideBar.css'
 import * as React from 'react'
-interface Props{
+interface SideProps{
   id:number;
   img:string;
   username:string
 }
-const SideBar = (): React.FC<Props>=> {
+const SideBar:React.FC<SideProps> = () => {
 
   return (
     <div>

@@ -3,7 +3,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHeart, faComment, faPaperPlane,faBookBookmark, faCheckCircle } from '@fortawesome/free-solid-svg-icons'
 import CommentSection from '../CommentSection/CommentSection'
 import { useState } from 'react'
-const Post:React.FC = ({ img, text, postedBy, commentsNumber}) => {
+interface PostProps{
+  text: string;
+  img:string;
+  postedBy: string;
+  commentsNumber: number;
+}
+const Post:React.FC<PostProps> = ({ img, text, postedBy, commentsNumber}) => {
   
   const[Red, setRed]= useState(false)
   const TurnRed =()=>{

@@ -1,5 +1,9 @@
+import * as React from 'react';
 import './CommentSection.css'
-const CommentSection = ({commentsNumber}) => {
+interface Props{
+  commentsNumber:number;
+}
+const CommentSection: React.FC<Props> = ({commentsNumber}) => {
   return (
     <>    <div className="comment--sect">See {commentsNumber} comments</div>
 <div className="comment--sect-add">

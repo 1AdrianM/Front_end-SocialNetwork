@@ -2,7 +2,6 @@ import StoryBoard from "../../Components/StoryBoard/StoryBoard"
 import Post from "../Post/Post"
 import {post} from '../../Array_post'
 import './Feed.css'
-import { useState } from "react";
 import * as React from "react";
 
 interface PostArray{
@@ -12,7 +11,7 @@ interface PostArray{
   postedBy: string;
   commentsNumber:number;
   }
-const Feed = ():React.FC<PostArray> => {
+const Feed :React.FC<PostArray>  = ()=> {
   
  // const [postArray, setPostArray]= useState(post)
  
@@ -25,7 +24,7 @@ const Feed = ():React.FC<PostArray> => {
             {post.map((post)=>(
               <Post
               key={post.id}
-              id= {post.id}  
+              id={post.id}  
               img= {post.img} 
               text= {post.text} 
               postedBy= {post.postedBy}
