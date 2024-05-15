@@ -4,9 +4,9 @@ import SideUser from '../SideUser/SideUser'
 import './SideBar.css'
 import * as React from 'react'
 interface SideProps{
-  id:number;
-  img:string;
-  username:string
+
+  img?:string;
+  username?:string
 }
 const SideBar:React.FC<SideProps> = () => {
 
@@ -22,11 +22,9 @@ const SideBar:React.FC<SideProps> = () => {
    
         {recommendedUser.map((post)=>(
               <RecommendationBar
-              key={post.id}
-              id={post.id}
-              username={post.username}
-              img={post.img}
-              />
+            key={post.id}
+            username={post.username}
+            img={post.img}            />
         ))}
         </div>
       </div>

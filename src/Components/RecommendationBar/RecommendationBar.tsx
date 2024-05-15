@@ -1,11 +1,14 @@
 import './RecommendationBar.css'
-
-const RecommendationBar = ({username, img, id}) => {
+interface BarProps{
+  username:string;
+  img:string;
+}
+const RecommendationBar: React.FC<BarProps> = ({username, img}) => {
   return (
     <>
 <div className='recommended-container'>
    
-<div className="recomended--user" key={id}>
+<div className="recomended--user" >
 <img src={img} alt="Profile Picture" />
 
     
