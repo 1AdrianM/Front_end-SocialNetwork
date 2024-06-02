@@ -11,12 +11,16 @@
 .story--orbs img{
 width:4rem;
 object-fit:contain;
-border: solid black;
-border-radius: 5rem;
+border:2px solid;
+
+border-radius:50%;
+background: linear-gradient(to left, #F9CE34, #EE2A7b, #6228D7);
 
 height:inherit;
 margin:auto;
 display:block;
+}
+.orbs--gradient {
 }
 .story--img{
 padding:1rem;

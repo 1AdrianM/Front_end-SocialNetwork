@@ -41,9 +41,19 @@ font-size:0.8rem;
     color: rgba(255,255,255, 0.9);
     font-size:0.7rem;
 }
-.btn-follow{
+.btn-no-followed{
     display:flex;
-    color:blue;
+    color:#4fb6ec;
+    font-size:0.8rem;
+    padding-top:0.6rem;
+    align-items:center;
+    margin-left:auto;
+    cursor:pointer;
+    padding-right:2rem;
+}
+.btn-followed{
+    display:flex;
+    color:white;
     font-size:0.8rem;
     padding-top:0.6rem;
     align-items:center;

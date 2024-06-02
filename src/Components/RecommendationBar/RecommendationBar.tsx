@@ -1,9 +1,16 @@
 import './RecommendationBar.css'
+import { useState } from 'react';
 interface BarProps{
   username:string;
   img:string;
+  followed: boolean
 }
-const RecommendationBar: React.FC<BarProps> = ({username, img}) => {
+const RecommendationBar: React.FC<BarProps> = ({username, img, followed}) => {
+  const [isFollowing, SetFollowing] = useState(followed)
+const handleSuggest=()=>{
+
+  SetFollowing(!isFollowing)
+  }
   return (
     <>
 <div className='recommended-container'>
@@ -17,7 +24,12 @@ const RecommendationBar: React.FC<BarProps> = ({username, img}) => {
     <span className='behind-info'>Sugerencias Para ti</span>
     </span>
     
-<span className='btn-follow'>Seguir</span>
+<span className={isFollowing?'btn-followed':'btn-no-followed'}
+onClick={handleSuggest}
+>
+{isFollowing?"Seguido":"Seguir"}
+</span>
+
 </div>
 </div>
 </>

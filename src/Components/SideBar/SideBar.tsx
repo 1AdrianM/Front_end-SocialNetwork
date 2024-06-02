@@ -7,6 +7,7 @@ interface SideProps{
 
   img?:string;
   username?:string
+  followed?:boolean
 }
 const SideBar:React.FC<SideProps> = () => {
 
@@ -24,7 +25,9 @@ const SideBar:React.FC<SideProps> = () => {
               <RecommendationBar
             key={post.id}
             username={post.username}
-            img={post.img}            />
+            img={post.img}
+            followed={post.followed}
+                        />
         ))}
         </div>
       </div>
